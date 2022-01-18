@@ -21,7 +21,7 @@ namespace Treino1
             Console.Write("Quantidade em estoque: ");
             p1.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine(p1);
-
+            Pagamento1:
             Console.WriteLine("Deseja Proseguir para pagamento? (s/n)");
             char resposta = char.Parse(Console.ReadLine());
             if(resposta == 'n' || resposta == 'N')
@@ -54,6 +54,11 @@ namespace Treino1
                     Console.WriteLine("Digite uma opção valida!");
                     goto Pagamento;
                 }
+            }
+            else
+            {
+                Console.WriteLine("Digite uma opção valida!");
+                goto Pagamento1;
             }
 
             Console.ReadLine();

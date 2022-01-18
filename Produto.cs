@@ -34,7 +34,7 @@ namespace Treino1
             get { return _nome; }
             set
             {
-                if(value != null && value.Length < 1)
+                if(value != null && value.Length > 1)
                 {
                     Console.WriteLine("Nome do produto não pode ser vazio e nem conter menos que ou apenas um caractere!");
                 }
